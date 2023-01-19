@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -73,7 +73,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 2 by 3
+  m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 243
+  controlID: 24
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 235
+  controlID: 121
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 907
     height: 486
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Towers
+    - Assets/scripts/Camera
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Towers
+  - Assets/scripts/Camera
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\my android workspaces\Tower-Defence-UGC\Tower-Defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa050100
-    m_LastClickedID: 66986
-    m_ExpandedIDs: 00000000b46900007a79000082790000a605010000ca9a3b
+    m_SelectedIDs: fe630000
+    m_LastClickedID: 25598
+    m_ExpandedIDs: 00000000ec630000ee630000fa63000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000ec630000ee630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,18 +392,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 2c770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: CanonTower
-      m_OriginalName: CanonTower
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 67076
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -448,9 +448,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 4c66feff1072feff007ffeff1a8cfeff4097feff389dfefff6a0feff36a5feff1ab1feffdee1feff1227ffffd833ffffdc3effff1853ffff4a60ffff346dffff5a7affffec85ffffcc8bffff908ffffff493ffffee9fffffdca3ffffe6acffff92b8ffff44c8ffff38ceffff14d2ffff26d6ffffece2ffff2eed000014f0000094380100b4380100883b0100
+      m_SelectedIDs: ba5a0000
+      m_LastClickedID: 23226
+      m_ExpandedIDs: e861ffff52d0ffff18fbffff2c5c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -466,7 +466,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 7}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -832,9 +832,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -50.967552, y: -83.92428, z: -35.818214}
+    m_Target: {x: 58.79165, y: -108.59238, z: 33.425888}
     speed: 2
-    m_Value: {x: -50.967552, y: -83.92428, z: -35.818214}
+    m_Value: {x: 58.79165, y: -108.59238, z: 33.425888}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0.99999976
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -881,20 +881,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.24898489, y: -0.66689974, z: 0.25360122, w: 0.6550591}
+    m_Target: {x: 0.4969241, y: 0.2362317, z: -0.14274503, w: 0.82284695}
     speed: 2
-    m_Value: {x: 0.24994645, y: -0.6664636, z: 0.25458047, w: 0.654631}
+    m_Value: {x: 0.49687636, y: 0.236209, z: -0.14273132, w: 0.8227679}
   m_Size:
-    m_Target: 90.25841
+    m_Target: 143.96693
     speed: 2
-    m_Value: 90.25841
+    m_Value: 137.7674
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0646999
+    m_SpeedNormalized: 0.53
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1

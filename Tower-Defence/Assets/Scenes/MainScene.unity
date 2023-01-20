@@ -21434,6 +21434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destination: {fileID: 531746570}
   WaveHead: 0
+  EnemiesParent: {fileID: 356583298}
 --- !u!1001 &1498720579
 PrefabInstance:
   m_ObjectHideFlags: 0

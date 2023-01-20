@@ -14,11 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - waveName: Wave 1
-    StartTime: 5
+    StartTime: 2
     enemyList:
     - HP: 10
-      Speed: 5
+      Speed: 8
       SpawnTime: 1
+      DelayTime: 0
       count: 5
+      type: 0
+      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
+    - HP: 10
+      Speed: 10
+      SpawnTime: 1
+      DelayTime: 2
+      count: 2
+      type: 0
+      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
+  - waveName: Wave 2
+    StartTime: 2
+    enemyList:
+    - HP: 10
+      Speed: 8
+      SpawnTime: 1
+      DelayTime: 0
+      count: 5
+      type: 0
+      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
+    - HP: 10
+      Speed: 10
+      SpawnTime: 1
+      DelayTime: 0
+      count: 2
       type: 0
       Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}

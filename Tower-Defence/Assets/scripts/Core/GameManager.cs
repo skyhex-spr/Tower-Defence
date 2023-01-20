@@ -8,10 +8,13 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public Waves WavesData;
 
-    [Header("Enemy Start Postions")]
+    [Header("Enemy Start/End Postio")]
     public List<Transform> StartPositions;
-    
 
+    [Header("BaseTowerConfigs")]
+    public GameObject ArcherTower;
+    public GameObject BombTower;
+    public GameObject TowerParent;
 
     // Start is called before the first frame update
     void Start()

@@ -10,17 +10,22 @@ public class EnemyController : MonoBehaviour , EnemyInterface
 
     public static UnityEvent FinishedLine = new UnityEvent();
     public float HP;
+    public GameObject HealthBar;
+    public Canvas playercanvas;
 
     // Start is called before the first frame update
     void Start()
     {
         enemy = GetComponent<NavMeshAgent>();
+        playercanvas.worldCamera = Camera.main;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         enemy.SetDestination(WaveManager.instance.Destination.position);
+
+        HealthBar.transform.rotation = Quaternion.LookRotation(HealthBar.transform.position - Camera.main.transform.position);
 
         if (!enemy.pathPending)
         {
@@ -34,6 +39,7 @@ public class EnemyController : MonoBehaviour , EnemyInterface
                 }
             }
         }
+
 
     }
 

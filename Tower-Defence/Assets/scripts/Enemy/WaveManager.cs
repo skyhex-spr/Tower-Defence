@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,13 +9,25 @@ public class WaveManager : MonoBehaviour
 
     public static WaveManager instance;
 
+    [Header("Configs")]
+    public Transform Destination;
+    public TextMeshProUGUI WaveText;
+    public EasyTween WavePanelTween;
+    public EasyTween WaveTextTween;
+
+    [Header("WaveParticle")]
+    public ParticleSystem FinishLine;
+
+    [Space(5)]
+    public Transform EnemiesParent;
+
     private Wave currentwave;
 
-    public Transform Destination;
+    [HideInInspector]
     public int WaveHead = 0;
     private int OnlineEnemies = 0;
 
-    public Transform EnemiesParent;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +44,7 @@ public class WaveManager : MonoBehaviour
     {
         currentwave = GameManager.Instance.WavesData.waves[WaveHead];
         List<Enemy> enemyList = currentwave.enemyList;
+        PushWaveText(WaveHead+1);
         StartCoroutine(GenerateEnemy(enemyList));
         WaveHead++;
     }
@@ -71,6 +85,7 @@ public class WaveManager : MonoBehaviour
     void OnEnemyFinishLineOrDestroy()
     {
         OnlineEnemies--;
+        FinishLine.Play();
         CheckWaveState();
     }
 
@@ -88,6 +103,24 @@ public class WaveManager : MonoBehaviour
         }
     }
     #endregion
+
+    #region WaveNotification
+    public void PushWaveText(int Wave)
+    {
+        WaveText.text = "WAVE " + Wave.ToString();
+        WavePanelTween.OpenCloseObjectAnimation();
+        WaveTextTween.OpenCloseObjectAnimation();
+        StartCoroutine(HideWaveNotification());
+    }
+
+    IEnumerator HideWaveNotification()
+    {
+        yield return new WaitForSeconds(2);
+        WavePanelTween.OpenCloseObjectAnimation();
+        WaveTextTween.OpenCloseObjectAnimation();
+    }
+    #endregion
+
     // Update is called once per frame
     void Update()
     {

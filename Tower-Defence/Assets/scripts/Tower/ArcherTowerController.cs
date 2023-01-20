@@ -13,11 +13,13 @@ public class ArcherTowerController : TowerBase
 
     public float radius;
     public float MaxDistance;
+    public float Speed;
     public LayerMask layerMask;
+
 
     private Vector3 origin;
     private Vector3 Direction;
-
+    private GameObject Arrow;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,24 @@ public class ArcherTowerController : TowerBase
             }
             CurrentTarget = hitColliders[0].gameObject;
             Debug.DrawLine(transform.position, CurrentTarget.transform.position, Color.red);
+            Shoot();
+        }
+    }
+
+
+
+    public void Shoot()
+    {
+        if (CurrentTarget != null)
+        {
+            if (Arrow == null)
+            { 
+                Arrow = Instantiate(GameManager.Instance.ArrowPrefab, new Vector3(transform.position.x , transform.position.y + 5 , transform.position.z), transform.rotation, transform);
+                Arrow.name = "Arrow";
+                ArrowController Arrowcontroller = Arrow.GetComponent<ArrowController>();
+                Arrowcontroller.speed = Speed;
+                Arrowcontroller.target = CurrentTarget;
+            }
         }
     }
 

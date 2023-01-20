@@ -18,7 +18,6 @@ public class TowerBase : MonoBehaviour
 
     public virtual void OnMouseDown()
     {
-        Debug.Log(gameObject.name);
     }
 
     void FixedUpdate()

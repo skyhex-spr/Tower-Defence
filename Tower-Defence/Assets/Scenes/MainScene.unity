@@ -18221,6 +18221,8 @@ MonoBehaviour:
   ArcherTower: {fileID: 6464355377212705582, guid: 218167320cb612c429be953cea141186, type: 3}
   BombTower: {fileID: 7712180389587606959, guid: f13a8958e363bb9498fda3297e83c110, type: 3}
   TowerParent: {fileID: 930957327}
+  ArrowPrefab: {fileID: 7029894429006463474, guid: 582a9d6f04710bc4896e19e11ba611f0, type: 3}
+  DeathParticlePrefab: {fileID: 100002, guid: e27bfc154dd5fdb4697ac547997f4c95, type: 3}
 --- !u!1001 &1188561322
 PrefabInstance:
   m_ObjectHideFlags: 0

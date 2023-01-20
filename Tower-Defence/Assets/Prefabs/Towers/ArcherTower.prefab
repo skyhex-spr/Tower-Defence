@@ -102,6 +102,7 @@ MonoBehaviour:
   CurrentTarget: {fileID: 0}
   radius: 15
   MaxDistance: 0
+  Speed: 30
   layerMask:
     serializedVersion: 2
     m_Bits: 256

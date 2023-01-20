@@ -33,6 +33,7 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         EnemyController.FinishedLine.AddListener(OnEnemyFinishLineOrDestroy);
+        EnemyController.OnDead.AddListener(OnEnemyFinishLineOrDestroy);
     }
 
     private void Awake()

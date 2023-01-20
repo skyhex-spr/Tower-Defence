@@ -6,4 +6,7 @@ public interface EnemyInterface
 {
     public void SetHP(float HP);
     public void AddDamage(float Damage);
+
+    public void Dead();
+
 }

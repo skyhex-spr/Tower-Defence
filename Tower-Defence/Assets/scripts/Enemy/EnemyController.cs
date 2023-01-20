@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour , EnemyInterface
 {
     private NavMeshAgent enemy;
 
+    public GameObject DeathParticle;
+
+
     public static UnityEvent FinishedLine = new UnityEvent();
+    public static UnityEvent OnDead = new UnityEvent();
+
     public float HP;
-    public GameObject HealthBar;
+    public Slider HealthBar;
     public Canvas playercanvas;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,13 +50,35 @@ public class EnemyController : MonoBehaviour , EnemyInterface
 
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+        if (other.gameObject.name == "Arrow")
+            AddDamage(other.GetComponent<ArrowController>().damage);
+    }
+
     public void SetHP(float HP)
     {
         this.HP = HP;
+        HealthBar.maxValue= HP;
+        HealthBar.value = HP;
     }
 
     public void AddDamage(float Damage)
     {
-        throw new System.NotImplementedException();
+        this.HP -= Damage;
+        HealthBar.value = HP;
+
+        if (HP <= 0)
+        {
+            Dead();
+        }
+    }
+
+    public void Dead()
+    {
+        OnDead.Invoke();
+        Instantiate(GameManager.Instance.DeathParticlePrefab.transform, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
+        Destroy(gameObject);
     }
 }

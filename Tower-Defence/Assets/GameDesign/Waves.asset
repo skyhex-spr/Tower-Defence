@@ -20,30 +20,30 @@ MonoBehaviour:
       Speed: 10
       SpawnTime: 1
       DelayTime: 0
-      count: 1
+      count: 2
       type: 0
-      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
-    - HP: 10
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
+    - HP: 40
       Speed: 12
       SpawnTime: 1
       DelayTime: 2
-      count: 1
+      count: 4
       type: 0
-      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
   - waveName: Wave 2
     StartTime: 4
     enemyList:
-    - HP: 10
-      Speed: 8
+    - HP: 60
+      Speed: 10
       SpawnTime: 1
       DelayTime: 0
       count: 5
       type: 0
-      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
-    - HP: 10
-      Speed: 10
-      SpawnTime: 1
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
+    - HP: 150
+      Speed: 8
+      SpawnTime: 2
       DelayTime: 0
-      count: 2
-      type: 0
-      Prefab: {fileID: 6759111296880214615, guid: 223223c3cba604e4088b07b3ec7db40b, type: 3}
+      count: 4
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}

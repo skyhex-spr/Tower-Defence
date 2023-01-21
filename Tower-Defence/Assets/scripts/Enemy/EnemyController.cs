@@ -52,9 +52,17 @@ public class EnemyController : MonoBehaviour , EnemyInterface
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+
         if (other.gameObject.name == "Arrow")
+        {
+            Destroy(other.gameObject);
             AddDamage(other.GetComponent<ArrowController>().damage);
+        }
+        else if (other.gameObject.name == "Bomb")
+        {
+            AddDamage(other.GetComponent<BombController>().damage);
+        }
+            
     }
 
     public void SetHP(float HP)

@@ -16,9 +16,13 @@ public class GameManager : MonoBehaviour
     public GameObject BombTower;
     public GameObject TowerParent;
     public GameObject ArrowPrefab;
+    public GameObject BombPrefab;
+
 
     [Header("Particles")]
     public GameObject DeathParticlePrefab;
+    public GameObject BallParticlePrefab;
+
 
 
     // Start is called before the first frame update

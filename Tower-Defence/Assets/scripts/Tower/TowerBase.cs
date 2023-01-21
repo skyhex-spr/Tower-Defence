@@ -30,20 +30,18 @@ public class TowerBase : MonoBehaviour
         origin = transform.position;
     }
 
-    void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         Collider[] hitColliders = Physics.OverlapSphere(origin, radius, layerMask);
 
         if (hitColliders.Length != 0)
         {
-            foreach (var hitCollider in hitColliders)
-            {
-                Debug.DrawLine(transform.position, hitCollider.transform.position, Color.white);
-            }
-            CurrentTarget = hitColliders[0].gameObject;
-            Debug.DrawLine(transform.position, CurrentTarget.transform.position, Color.red);
-            Shoot();
+            ShootDesition(hitColliders);
         }
+    }
+
+    public virtual void ShootDesition(Collider[] hitColliders)
+    {
     }
 
     public virtual void Shoot()

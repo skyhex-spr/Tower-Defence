@@ -7,63 +7,26 @@ using UnityEngine.PlayerLoop;
 
 public class ArcherTowerController : TowerBase
 {
-    public GameObject CurrentTarget;
-    private float CurrentTargetDistance;
-
-
-    public float radius;
-    public float MaxDistance;
-    public float Speed;
-    public LayerMask layerMask;
-
-
-    private Vector3 origin;
-    private Vector3 Direction;
-    private GameObject Arrow;
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        origin = transform.position;
+       base.Start();
     }
 
-    void FixedUpdate()
-    { 
-        Collider[] hitColliders = Physics.OverlapSphere(origin, radius, layerMask);
-
-        if (hitColliders.Length != 0)
-        {
-            foreach (var hitCollider in hitColliders)
-            {
-                Debug.DrawLine(transform.position, hitCollider.transform.position, Color.white);
-            }
-            CurrentTarget = hitColliders[0].gameObject;
-            Debug.DrawLine(transform.position, CurrentTarget.transform.position, Color.red);
-            Shoot();
-        }
-    }
-
-
-
-    public void Shoot()
+    public override void Shoot()
     {
         if (CurrentTarget != null)
         {
-            if (Arrow == null)
+            if (Bullet == null)
             { 
-                Arrow = Instantiate(GameManager.Instance.ArrowPrefab, new Vector3(transform.position.x , transform.position.y + 5 , transform.position.z), transform.rotation, transform);
-                Arrow.name = "Arrow";
-                ArrowController Arrowcontroller = Arrow.GetComponent<ArrowController>();
+                Bullet = Instantiate(GameManager.Instance.ArrowPrefab, new Vector3(transform.position.x , transform.position.y + 5 , transform.position.z), transform.rotation, transform);
+                Bullet.name = "Arrow";
+                ArrowController Arrowcontroller = Bullet.GetComponent<ArrowController>();
                 Arrowcontroller.speed = Speed;
                 Arrowcontroller.target = CurrentTarget;
             }
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(origin, radius);
     }
 
 }

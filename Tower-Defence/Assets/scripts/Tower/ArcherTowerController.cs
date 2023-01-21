@@ -19,7 +19,6 @@ public class ArcherTowerController : TowerBase
         foreach (var hitCollider in hitColliders)
         {
             Debug.DrawLine(transform.position, hitCollider.transform.position, Color.white);
-
         }
         CurrentTarget = hitColliders[0].gameObject;
         Debug.DrawLine(transform.position, CurrentTarget.transform.position, Color.red);

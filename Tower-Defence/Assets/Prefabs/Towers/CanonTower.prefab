@@ -218,12 +218,13 @@ MonoBehaviour:
   CurrentTarget: {fileID: 0}
   radius: 30
   MaxDistance: 0
-  Speed: 20
+  Speed: 3
   layerMask:
     serializedVersion: 2
     m_Bits: 256
   CanonHead: {fileID: 7710800594382284213}
   shootpoint: {fileID: 8935987231585379721}
+  MinTargetDistance: 8
 --- !u!1001 &1719611454194579457
 PrefabInstance:
   m_ObjectHideFlags: 0

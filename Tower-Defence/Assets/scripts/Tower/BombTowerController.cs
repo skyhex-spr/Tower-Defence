@@ -28,11 +28,12 @@ public class BombTowerController : TowerBase
         foreach (var hitCollider in hitColliders)
         {
             Debug.DrawLine(transform.position, hitCollider.transform.position, Color.white);
-
+            Debug.Log(math.abs(hitCollider.transform.position.x - transform.position.x));
             if (math.abs(hitCollider.transform.position.x - transform.position.x) > MinTargetDistance)
             {
-                CurrentTarget = hitColliders[0].gameObject;
+                CurrentTarget = hitCollider.gameObject;
                 Debug.DrawLine(transform.position, CurrentTarget.transform.position, Color.red);
+                break;
             }
         }
         Shoot();
@@ -50,6 +51,7 @@ public class BombTowerController : TowerBase
                     Bullet = Instantiate(GameManager.Instance.BombPrefab, shootpoint.transform.position, Quaternion.identity);
                     Bullet.name = "Bomb";
                     Bullet.GetComponent<Rigidbody>().velocity = targetPos;
+                    Bullet.GetComponent<BombController>().speed = Speed;
 
                 }
             }

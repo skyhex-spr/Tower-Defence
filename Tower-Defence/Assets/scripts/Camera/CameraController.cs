@@ -51,12 +51,12 @@ public class CameraController : MonoBehaviour
             if(transform.position.z - DownWall.position.z >= -50)
             NewPosition += (transform.forward * -MovementSpeed);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             if (transform.position.x - RighttWall.position.x <= -50)
                 NewPosition += (transform.right * MovementSpeed);
         }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             if (transform.position.x - LeftWall.position.x >= 50)
                 NewPosition += (transform.right * -MovementSpeed);

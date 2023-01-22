@@ -27,12 +27,12 @@ MonoBehaviour:
       type: 0
       Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
     - HP: 40
-      Speed: 12
+      Speed: 10
       PlayerDamage: 1
       PlayerScore: 5
       Coin: 5
       SpawnTime: 1
-      DelayTime: 2
+      DelayTime: 3
       count: 4
       type: 0
       Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
@@ -59,7 +59,7 @@ MonoBehaviour:
       count: 4
       type: 1
       Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
-  - waveName: Wave 2
+  - waveName: Wave 3
     StartTime: 4
     enemyList:
     - HP: 60
@@ -92,3 +92,162 @@ MonoBehaviour:
       count: 4
       type: 1
       Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+  - waveName: Wave 4
+    StartTime: 4
+    enemyList:
+    - HP: 60
+      Speed: 12
+      PlayerDamage: 1
+      PlayerScore: 5
+      Coin: 5
+      SpawnTime: 1
+      DelayTime: 0
+      count: 5
+      type: 0
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 2
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 5
+      count: 4
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+  - waveName: Wave 5
+    StartTime: 4
+    enemyList:
+    - HP: 60
+      Speed: 12
+      PlayerDamage: 1
+      PlayerScore: 5
+      Coin: 5
+      SpawnTime: 1
+      DelayTime: 0
+      count: 5
+      type: 0
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 2
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 5
+      count: 4
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 5
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 10
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+  - waveName: Finall
+    StartTime: 4
+    enemyList:
+    - HP: 60
+      Speed: 12
+      PlayerDamage: 1
+      PlayerScore: 5
+      Coin: 5
+      SpawnTime: 1
+      DelayTime: 0
+      count: 5
+      type: 0
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 2
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 2
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 5
+      count: 4
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 8
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 6
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 5
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 10
+      type: 1
+      Prefab: {fileID: 6759111296880214615, guid: e3021040376a926479996c3cbdee7387, type: 3}
+    - HP: 150
+      Speed: 5
+      PlayerDamage: 1
+      PlayerScore: 10
+      Coin: 7
+      SpawnTime: 2
+      DelayTime: 7
+      count: 15
+      type: 1
+      Prefab: {fileID: 9093672219899582075, guid: 287e035ae2834ae43862466a72226f2f, type: 3}

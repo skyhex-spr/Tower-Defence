@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    
+
     public static GameManager Instance;
     public Waves WavesData;
 
@@ -30,12 +30,13 @@ public class GameManager : MonoBehaviour
     public EasyTween Elements;
     public Canvas UICanvas;
     public GameObject MSGPrefab;
+    public TextMeshProUGUI GameSpeed;
 
 
     [Space(5)]
-   [HideInInspector] public EconomyManager economymanager;
-   [HideInInspector] public HPManager hpmanager;
-   [HideInInspector] public ScoreManager scoremanager;
+    [HideInInspector] public EconomyManager economymanager;
+    [HideInInspector] public HPManager hpmanager;
+    [HideInInspector] public ScoreManager scoremanager;
 
 
     // Start is called before the first frame update
@@ -59,12 +60,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void IntialGameUI()
     {
         Elements.OpenCloseObjectAnimation();
+    }
+
+    public void SetGameSpeed()
+    {
+        if (GameSpeed.text == "1x")
+        {
+            Time.timeScale = 2;
+            GameSpeed.text = "2x";
+        }
+        else
+        {
+            Time.timeScale = 1;
+            GameSpeed.text = "1x";
+        }
     }
 
 

@@ -102,7 +102,7 @@ public class WaveManager : MonoBehaviour
             if (WaveHead < GameManager.Instance.WavesData.waves.Count)
                 StartWave();
             else
-                Debug.Log("GAME FINISHED");
+                GameManager.Instance.GameOver(true);
 
         }
     }

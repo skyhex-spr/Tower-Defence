@@ -69,7 +69,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 08000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.472878, y: 54.588593, z: -66.69691}
+    m_Target: {x: 35.70464, y: 19.336243, z: -11.465454}
     speed: 2
-    m_Value: {x: 9.472878, y: 54.588593, z: -66.69691}
+    m_Value: {x: 35.70464, y: 19.336243, z: -11.465454}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -466,13 +466,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.47016153, y: 0.036504645, z: -0.019747151, w: 0.8817798}
+    m_Target: {x: 0.41951823, y: 0.0075875954, z: -0.0038598785, w: 0.90788096}
     speed: 2
-    m_Value: {x: 0.4700887, y: 0.03649899, z: -0.01974409, w: 0.8816432}
+    m_Value: {x: 0.41945198, y: 0.007586397, z: -0.003859269, w: 0.90773755}
   m_Size:
-    m_Target: 0.38874516
+    m_Target: 74.517235
     speed: 2
-    m_Value: 0.38874516
+    m_Value: 71.30836
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -580,9 +580,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7408ffff
-      m_LastClickedID: -63372
-      m_ExpandedIDs: 7a08ffff0c52ffffcc89ffff0cfbffffbe660000aa9b010040bf0100
+      m_SelectedIDs: 02e7fbff
+      m_LastClickedID: -268542
+      m_ExpandedIDs: 6ef4fbff8002fcff0211fcff262dfcff5e2efcffe43efcfff84dfcff4e5cfcffc467fcff0c52ffffcc89ffff0cfbffffbe660000aa9b010088bb010040bf010004c00100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -673,22 +673,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Packages/TextMesh Pro/Resources/Fonts & Materials
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Packages/TextMesh Pro/Resources/Fonts & Materials
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\my android workspaces\Tower-Defence-UGC\Tower-Defence
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f07d0000
-    m_LastClickedID: 32240
-    m_ExpandedIDs: 00000000ee750000f0750000f2750000f4750000f6750000f8750000fa750000fc750000007600000276000004760000227600003676000066760000ee7d000000ca9a3b
+    scrollPos: {x: 0, y: 26}
+    m_SelectedIDs: 26760000
+    m_LastClickedID: 30246
+    m_ExpandedIDs: 00000000ee750000f0750000f2750000f4750000f6750000f8750000fa750000fc750000fe75000000760000027600002276000024760000367600006476000066760000ee7d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -741,9 +741,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7408ffff
-    m_LastClickedInstanceID: -63372
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 02e7fbff
+    m_LastClickedInstanceID: -268542
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 2c770000000000007e030100f2e60300306d00002c6d00002e6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -791,8 +791,8 @@ MonoBehaviour:
     y: 0
     width: 505
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}

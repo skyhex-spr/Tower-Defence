@@ -44,8 +44,8 @@ public class EnemyController : MonoBehaviour , EnemyInterface
                 if (!enemy.hasPath || enemy.velocity.sqrMagnitude < 0.5f)
                 {
                     Debug.Log("One Enemy Arrived");
-                    GameManager.Instance.hpmanager.Reducehp(PlayerDamage);
                     GameManager.Instance.scoremanager.ReduceScore(PlayerDamage);
+                    GameManager.Instance.hpmanager.Reducehp(PlayerDamage);
                     FinishedLine.Invoke();
                     Destroy(gameObject);
                 }

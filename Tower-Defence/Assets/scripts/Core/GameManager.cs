@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,6 +33,11 @@ public class GameManager : MonoBehaviour
     public Canvas UICanvas;
     public GameObject MSGPrefab;
     public TextMeshProUGUI GameSpeed;
+    public EasyTween EndGame;
+    public TextMeshProUGUI EndGameState;
+    public TextMeshProUGUI EndGameScore;
+
+
 
 
     [Space(5)]
@@ -91,10 +98,23 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void GameOver()
+    public void GameOver(bool win = true)
     {
+
+        Time.timeScale = 1;
+        UICanvas.sortingOrder = 0;
+
         Debug.Log("GameOver");
         SoldiersParent.SetActive(false);
+
+        if (win)
+            EndGameState.text = "U WIN";
+        else
+            EndGameState.text = "U LOSE";
+
+        EndGameScore.text = "SCORE : " + scoremanager.Score;
+
+        EndGame.OpenCloseObjectAnimation();
     }
 
 }

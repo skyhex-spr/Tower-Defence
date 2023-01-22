@@ -11,8 +11,7 @@ public class HPManager : MonoBehaviour
     public int HP;
     public TextMeshProUGUI HPTXT;
 
-    public UnityEvent OnGameOver = new UnityEvent();
-
+    public UnityEvent<bool> OnGameOver = new UnityEvent<bool>();
     public void InititHP()
     {
         UpdateUI();
@@ -41,7 +40,7 @@ public class HPManager : MonoBehaviour
     {
         if (HP == 0)
         {
-            OnGameOver.Invoke();
+            OnGameOver.Invoke(false);
         }
     }
 

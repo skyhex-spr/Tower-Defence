@@ -69,6 +69,9 @@ public class WaveManager : MonoBehaviour
 
                 EnemyController controller = enemy.GetComponent<EnemyController>();
                 controller.SetHP(enemyList[i].HP);
+                controller.PlayerDamage = enemyList[i].PlayerDamage;
+                controller.PlayerScore = enemyList[i].PlayerScore;
+                controller.PlayerCoin = enemyList[i].Coin;
                 enemy.GetComponent<NavMeshAgent>().speed = enemyList[i].Speed;
 
                 enemy.transform.parent = EnemiesParent;

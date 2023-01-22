@@ -22,6 +22,9 @@ public class Enemy
 {
     public float HP;
     public float Speed;
+    public int PlayerDamage;
+    public int PlayerScore;
+    public int Coin;
     public float SpawnTime;
     public float DelayTime;
     public int count;

@@ -13,6 +13,7 @@ public class TowerBase : MonoBehaviour
     public float radius;
     public float MaxDistance;
     public float Speed;
+    public int Price;
     public LayerMask layerMask;
 
     protected Vector3 origin;

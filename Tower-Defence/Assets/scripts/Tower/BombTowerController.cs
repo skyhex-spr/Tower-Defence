@@ -28,7 +28,6 @@ public class BombTowerController : TowerBase
         foreach (var hitCollider in hitColliders)
         {
             Debug.DrawLine(transform.position, hitCollider.transform.position, Color.white);
-            Debug.Log(math.abs(hitCollider.transform.position.x - transform.position.x));
             if (math.abs(hitCollider.transform.position.x - transform.position.x) > MinTargetDistance)
             {
                 CurrentTarget = hitCollider.gameObject;

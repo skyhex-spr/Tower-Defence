@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BuildingPointController : MonoBehaviour
@@ -35,22 +36,34 @@ public class BuildingPointController : MonoBehaviour
     public void SetNewTower(string tower)
     {
 
-        GameObject Prefab = new GameObject();
+        GameObject Prefab = null;
+        int price = 0;
 
         switch (tower)
         {
             case "archer":
-            Prefab = GameManager.Instance.ArcherTower;
+                Prefab = GameManager.Instance.ArcherTower;
+                price = Prefab.GetComponent<ArcherTowerController>().Price;
                 break;
             case "bomb":
                 Prefab = GameManager.Instance.BombTower;
+                price = Prefab.GetComponent<BombTowerController>().Price;
                 break;
             default:
                 break;
         }
 
-        GameObject Tower = Instantiate(Prefab,transform.position,transform.rotation,GameManager.Instance.TowerParent.transform);
-        Destroy(gameObject);
+        if (price <= GameManager.Instance.economymanager.Coin)
+        {
+            GameObject Tower = Instantiate(Prefab, transform.position, transform.rotation, GameManager.Instance.TowerParent.transform);
+            GameManager.Instance.economymanager.ReduceCoin(price);
+            Destroy(gameObject);
+        }
+        else
+        {
+            GameManager.Instance.ShowMessage("NOT ENOUGH MONEY");
+        }
+
   
     }
 

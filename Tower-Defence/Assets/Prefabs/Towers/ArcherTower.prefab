@@ -103,6 +103,7 @@ MonoBehaviour:
   radius: 15
   MaxDistance: 0
   Speed: 30
+  Price: 50
   layerMask:
     serializedVersion: 2
     m_Bits: 256

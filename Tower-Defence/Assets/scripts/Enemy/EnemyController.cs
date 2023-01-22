@@ -16,6 +16,9 @@ public class EnemyController : MonoBehaviour , EnemyInterface
     public static UnityEvent OnDead = new UnityEvent();
 
     public float HP;
+    public int PlayerDamage;
+    public int PlayerScore;
+    public int PlayerCoin;
     public Slider HealthBar;
     public Canvas playercanvas;
 
@@ -41,6 +44,8 @@ public class EnemyController : MonoBehaviour , EnemyInterface
                 if (!enemy.hasPath || enemy.velocity.sqrMagnitude < 0.5f)
                 {
                     Debug.Log("One Enemy Arrived");
+                    GameManager.Instance.hpmanager.Reducehp(PlayerDamage);
+                    GameManager.Instance.scoremanager.ReduceScore(PlayerDamage);
                     FinishedLine.Invoke();
                     Destroy(gameObject);
                 }
@@ -86,6 +91,8 @@ public class EnemyController : MonoBehaviour , EnemyInterface
     public void Dead()
     {
         OnDead.Invoke();
+        GameManager.Instance.scoremanager.AddScore(PlayerDamage);
+        GameManager.Instance.economymanager.AddCoin(PlayerCoin);
         Instantiate(GameManager.Instance.DeathParticlePrefab.transform, transform.position, transform.rotation).GetComponent<ParticleSystem>().Play();
         Destroy(gameObject);
     }

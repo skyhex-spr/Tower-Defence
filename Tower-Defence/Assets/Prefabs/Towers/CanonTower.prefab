@@ -225,6 +225,7 @@ MonoBehaviour:
     m_Bits: 256
   CanonHead: {fileID: 7710800594382284213}
   shootpoint: {fileID: 8935987231585379721}
+  shootspeed: 0.5
   MinTargetDistance: 8
 --- !u!1001 &1719611454194579457
 PrefabInstance:

@@ -742,9 +742,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b68c1e69728f4e42ab725a5cc34aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1578255681527714402}
   Archer: {fileID: 2966902128722870446}
   Bomb: {fileID: 18822569877708233}
+  canvas: {fileID: 1578255681527714402}
 --- !u!65 &1629026851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -894,7 +894,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &6369119176984219168
 MonoBehaviour:

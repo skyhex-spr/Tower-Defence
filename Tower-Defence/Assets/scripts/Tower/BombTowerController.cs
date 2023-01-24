@@ -9,6 +9,7 @@ public class BombTowerController : TowerBase
 
     public GameObject CanonHead;
     public Transform shootpoint;
+    public float shootspeed = 1f;
     public int MinTargetDistance = 8;
 
     // Start is called before the first frame update
@@ -45,7 +46,7 @@ public class BombTowerController : TowerBase
             {
                 if (Bullet == null)
                 {
-                    Vector3 targetPos = CalculateVelocity(CurrentTarget.transform.position, CanonHead.transform.position, 1f);
+                    Vector3 targetPos = CalculateVelocity(CurrentTarget.transform.position, CanonHead.transform.position, shootspeed);
                     CanonHead.transform.LookAt(targetPos);
                     Bullet = Instantiate(GameManager.Instance.BombPrefab, shootpoint.transform.position, Quaternion.identity);
                     Bullet.name = "Bomb";
